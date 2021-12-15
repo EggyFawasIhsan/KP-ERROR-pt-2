@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity">
+
+    <TextView
+        android:id="@+id/tvjd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="ISI DATA DIRIMU TERLEBIH DAHULU !"
+        android:textColor="#d46c22"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvjd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="13"
+        android:fontFamily="sans-serif-black"
+        android:hint="Masukan Nama Lengkapmu"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/sekolah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Asal Sekolahmu"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/kelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sekolah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="KELAS dan JURUSAN"
+        android:inputType="textCapWords"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnmulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kelas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="kirimdata"
+        android:text="MULAI QUIZ"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIHAT REPORT"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnmulai"
+        android:layout_marginTop="15dp"
+        android:onClick="report"
+        android:id="@+id/btnreport"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LihatHasilActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/txtnama"
+        android:layout_marginTop="40dp"
+        android:text="Nama"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnama"
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/txtkelas"
+        android:layout_marginTop="10dp"
+        android:text="Kelas"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtkelas"
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/txtsekolah"
+        android:layout_marginTop="10dp"
+        android:text="Sekolah"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtsekolah"
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/txtnilaimu"
+        android:layout_marginTop="10dp"
+        android:text="HASIL NILAI"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnkembali"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="kembali"
+        android:layout_below="@+id/txtnilaimu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="KEMBALI"
+        android:shadowColor="#CA9E1B"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        app:strokeColor="#B12E2E" />
+
+
+
+
+</RelativeLayout>
